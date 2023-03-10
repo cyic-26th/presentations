@@ -68,8 +68,8 @@
 \begin{frame}
     \frametitle{安裝 Git － Windows}
     \begin{itemize}
-        \item 到 \textbf{Configuring the terminal...} 時
-        \item 選擇 \textbf{Use Windows' default console window}
+        \item 到 {\textbf{Configuring the terminal...}} 時
+        \item 選擇 {\textbf{Use Windows' default console window}}
         \item \includegraphics[width=8.0cm]{img/download.jpg}
     \end{itemize}
 \end{frame}
@@ -83,11 +83,20 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Git 初始化}
+    \frametitle{Git 使用者初始化}
+    \begin{itemize}
+        \item {\color{red} git config −−global user.name "[你的名字]"}
+        \item {\color{red} git config −−global user.email [你的 email]}
+        \item 以上操作，一台電腦只需要做一次
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Git 儲存庫初始化}
     \begin{itemize}
         \item {\color{red}cd} 進去要做為儲存庫的資料夾
         \item 輸入\ {\color{red}git init}
-        \item 初始化只需要做一次
+        \item 以上操作，\textbf{一個儲存庫}只需要做一次
     \end{itemize}
 \end{frame}
 
@@ -96,6 +105,8 @@
     \begin{itemize}
         \item 輸入\ {\color{red}git add [檔案名稱 / 路徑]}
         \item 可以將檔案都加入暫存庫
+        \vspace{0.5cm}
+        \item<2-> 常用的像是\ {\color{red} git add .} （將當前資料夾的檔案都加入暫存庫）
     \end{itemize}
 \end{frame}
 
@@ -104,6 +115,8 @@
     \begin{itemize}
         \item 輸入\ {\color{red}git commit -m [紀錄訊息]}
         \item 可以將暫存庫裡面的檔案紀錄到 git 中
+        \vspace{0.5cm}
+        \item<2-> 紀錄訊息的內容以簡短、看得出做了什麼變更為原則
     \end{itemize}
 \end{frame}
 
@@ -144,7 +157,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Github 上傳檔案）}
+    \frametitle{Github 上傳檔案}
     \begin{itemize}
         \item {\color{red}git add .}
         \item {\color{red}git commit -m "[你的 commit 訊息]"}
